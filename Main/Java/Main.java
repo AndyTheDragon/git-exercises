@@ -1,25 +1,19 @@
 public class Main {
 
     public static void main(String[] args) {
-
-        int tal = 0;
-
-        while(tal < 100){
-
-            if (tal % 3 == 0 && tal % 5 == 0){
-                System.out.println("FizzBuzz");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                if (i % 3 == 0) {
+                    System.out.print("Fizz");
+                }
+                if (i % 5 == 0) {
+                    System.out.print("Buzz");
+                }
+                System.out.println();
             }
-            else if (tal % 3 == 0){
-                System.out.println("Fizz");
+            else {
+                System.out.println(i);
             }
-            else if (tal % 5 == 0){
-                System.out.println("Buzz");
-            }
-            else{
-                System.out.println(tal);
-            }
-
-            tal++;
         }
     }
 }
