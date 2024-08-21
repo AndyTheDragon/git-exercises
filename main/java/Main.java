@@ -3,11 +3,12 @@ public class Main {
         for (int i = 0; i < 100; i++) {
             if (i % 3 == 0 || i % 5 == 0) {
                 if (i % 3 == 0) {
-                    System.out.println("Fizz");
+                    System.out.print("Fizz");
                 }
                 if (i % 5 == 0) {
-                    System.out.println("Buzz");
+                    System.out.print("Buzz");
                 }
+                System.out.println();
             }
             else {
                 System.out.println(i);
